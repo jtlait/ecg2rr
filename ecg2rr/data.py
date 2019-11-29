@@ -4,6 +4,9 @@ Functions to prepare training data.
 This module provides functions that read data from PhysioNet data base,
 transform data, filter data and augment data.
 
+Copyright 2019, Juho Laitala
+Licence: MIT, see LICENCE for more details.
+
 """
 import numpy as np
 from wfdb import rdsamp, rdann

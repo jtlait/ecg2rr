@@ -5,6 +5,9 @@ This module provides functions that process ECG signals in the form
 expected by the LSTM model and functions that extract R-peak locations
 from the predictions of the LSTM model.
 
+Copyright 2019, Juho Laitala
+Licence: MIT, see LICENCE for more details.
+
 """
 import numpy as np
 from scipy.signal import resample_poly
