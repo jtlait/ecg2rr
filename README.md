@@ -10,9 +10,7 @@ Repository will contain code used in the upcoming publication:
 
 Before usage install dependencies.
 
-> pip install tensorflow
-pip install scipy
-pip install wfdb
+> pip install tensorflow scipy wfdb
 
 ## Usage
 
