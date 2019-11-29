@@ -1,6 +1,4 @@
 # ecg2rr
-[![DOI](https://zenodo.org/badge/216735595.svg)](https://zenodo.org/badge/latestdoi/216735595)
-
 
 Repository will contain code used in the upcoming publication:
 
