@@ -354,7 +354,9 @@ class ECG_detector(Detector):
             # Correct peaks with respect to original signal
             orig_peaks = processing.correct_peaks(sig=signal,
                                                   peak_inds=orig_peaks,
-                                                  search_radius=10,
+                                                  search_radius=int(
+                                                      self.iput_fs/50
+                                                      ),
                                                   smooth_window_size=20,
                                                   peak_dir='up')
 
