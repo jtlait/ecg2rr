@@ -345,7 +345,7 @@ class ECG_detector(Detector):
         if self.resample:
             # Resampled positions
             resampled_pos = np.round(np.linspace(0, (sig.shape[0]-0.5),
-                                     sig.shape[0]*(self.iput_fs/250)),
+                                     int(sig.shape[0]*(self.iput_fs/250))),
                                      decimals=1)
 
             # Resample peaks back to original frequency
