@@ -14,6 +14,7 @@ from scipy.signal import resample_poly
 from wfdb import processing
 from tensorflow.keras.models import load_model
 from functools import partial
+from importlib.resources import path
 
 
 class Detector:
@@ -177,17 +178,17 @@ class ECG_detector(Detector):
     Detects R-peak locations by using LSTM model.
     """
 
-    def __init__(self, model, sampling_rate, stride=250,
+    def __init__(self, sampling_rate, model=None, stride=250,
                  window_size=1000, threshold=0.05):
         """
         Initialize ECG_cetector.
 
         Parameters
         ----------
-        model : String
-            Path to trained model as h5 file.
         sampling_rate : int
             Sampling rate used in ECG signals.
+        model : String
+            Path to trained model as h5 file.
         stride : int
             Amount (step) to move the window. Must be 100, 200, 250 or 500.
         window_size : int
@@ -203,7 +204,13 @@ class ECG_detector(Detector):
             print('Unallowed window size chosen, setting size to 1000')
             window_size = 1000
 
-        super().__init__(model, window_size, stride)
+        if model is None:
+            with path('ecg2rr', 'lstm.h5') as path_to_model:
+                self.model_path = path_to_model
+        else:
+            self.model_path = model
+
+        super().__init__(self.model_path, window_size, stride)
         self.iput_fs = sampling_rate
         self.threshold = threshold
 

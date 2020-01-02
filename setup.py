@@ -11,8 +11,8 @@ setuptools.setup(
     author="Juho Laitala",
     author_email="jtlait@utu.fi",
     license="MIT",
-    packages=setuptools.find_packages(),
-    package_data={'': ['*.ȟ5']},
+    packages=['ecg2rr'],
+    package_data={'ecg2rr': ['*.h5']},
     install_requires=[
         "tensorflow",
         "scipy",
