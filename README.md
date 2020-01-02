@@ -20,10 +20,6 @@ Latest version of the package can be installed from github with pip:
 
 > `pip install git+https://github.com/jtlait/ecg2rr.git#egg=ecg2rr`
 
-Version used in the publication can be installed similarly:
-
-> `pip install git+https://github.com/jtlait/ecg2rr.git@v0.1.0#egg=ecg2rr`
-
 ## Usage
 
 See `usage_example.ipynb` from the notebooks directory.
