@@ -12,7 +12,7 @@ setuptools.setup(
     author_email="jtlait@utu.fi",
     license="MIT",
     packages=setuptools.find_packages(),
-    package_data={'ecg2rr': ['data/.*ȟ5']},
+    package_data={'ecg2rr': ['data/lstm.ȟ5']},
     install_requires=[
         "tensorflow",
         "scipy",
