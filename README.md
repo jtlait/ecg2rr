@@ -8,9 +8,17 @@ More functionality regarding RR intervals will be added in future, hence the nam
 
 ## Dependencies
 
-Before usage install dependencies.
+Package has following dependecies:
 
-> pip install tensorflow scipy wfdb
+* tensorflow
+* scipy
+* wfdb
+
+## Installation
+
+Package can be installed from github with pip:
+
+> pip install git+https://github.com/jtlait/ecg2rr.git#egg=ecg2rr
 
 ## Usage
 
