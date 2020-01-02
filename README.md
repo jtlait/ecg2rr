@@ -10,15 +10,15 @@ More functionality regarding RR intervals will be added in future, hence the nam
 
 Package has following dependecies:
 
-* tensorflow
-* scipy
-* wfdb
+* [tensorflow 2](https://www.tensorflow.org/)
+* [scipy](https://www.scipy.org/)
+* [wfdb-python](https://github.com/MIT-LCP/wfdb-python)
 
 ## Installation
 
-Package can be installed from github with pip:
+Latest version of the package can be installed from github with pip:
 
-> pip install git+https://github.com/jtlait/ecg2rr.git#egg=ecg2rr
+> `pip install git+https://github.com/jtlait/ecg2rr.git#egg=ecg2rr`
 
 ## Usage
 
