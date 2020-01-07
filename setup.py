@@ -5,6 +5,7 @@ import setuptools
 setuptools.setup(
     name="ecg2rr",
     version="0.1.0",
+    python_requires='>=3.7',
     description="ECG R-peak detection with LSTM network",
     long_description=open('README.md').read(),
     url="https://github.com/jtlait/ecg2rr",
