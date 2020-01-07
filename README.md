@@ -8,7 +8,7 @@ More functionality regarding RR intervals will be added in future, hence the nam
 
 ## Dependencies
 
-Package has following dependecies:
+Package requires python version 3.7 or higher and it has following dependecies:
 
 * [tensorflow 2](https://www.tensorflow.org/)
 * [scipy](https://www.scipy.org/)
@@ -16,7 +16,7 @@ Package has following dependecies:
 
 ## Installation
 
-Latest version of the package can be installed from github with pip:
+Latest version of the package and its dependencies can be installed from github with pip:
 
 > `pip install git+https://github.com/jtlait/ecg2rr.git#egg=ecg2rr`
 
