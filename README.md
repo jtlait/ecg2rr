@@ -2,7 +2,7 @@
 
 Repository will contain code used in the upcoming publication:
 
-> Juho Laitala, Mingzhe Jiang, Elise Syrjälä, Emad Naeini, Antti Airola, Amir M.Rahmani, Nikil Dutt, and Pasi Liljeberg. 2020. Robust ECG R-peak Detection Using LSTM. In Proceedings of ACM SAC Conference (SAC’20). ACM, New York, NY, USA, Article 4, 8 pages (accepted)
+> Juho Laitala, Mingzhe Jiang, Elise Syrjälä, Emad Kasaeyan Naeini, Antti Airola, Amir M. Rahmani, Nikil D. Dutt, and Pasi Liljeberg. 2020. Robust ECG R-peak Detection Using LSTM. In The 35th ACM/SIGAPP Symposium on Applied Computing (SAC ’20), March 30-April 3, 2020, Brno, Czech Republic. (accepted)
 
 More functionality regarding RR intervals will be added in future, hence the name ecg2rr.
 
