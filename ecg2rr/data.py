@@ -89,9 +89,9 @@ def data_from_records(records, channel, db):
 
     for record in records:
         print('processing record: ', record)
-        signal = (rdsamp(record, pb_dir=db))
+        signal = (rdsamp(record, pn_dir=db))
         signal_fs = signal[1]['fs']
-        annotation = rdann(record, 'atr', pb_dir=db)
+        annotation = rdann(record, 'atr', pn_dir=db)
 
         # resample to 250 Hz
         signal, annotation = resample_singlechan(

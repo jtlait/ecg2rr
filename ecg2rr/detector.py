@@ -350,13 +350,9 @@ class ECG_detector(Detector):
                                               preds=predictions
                                               )
         if self.resample:
-            # Resampled positions
-            resampled_pos = np.round(np.linspace(0, (sig.shape[0]-0.5),
-                                     int(sig.shape[0]*(self.iput_fs/250))),
-                                     decimals=1)
 
             # Resample peaks back to original frequency
-            orig_peaks = processing.resample_ann(resampled_pos, filtered_peaks)
+            orig_peaks = processing.resample_ann(filtered_peaks, 250, self.iput_fs)
 
             # Correct peaks with respect to original signal
             orig_peaks = processing.correct_peaks(sig=signal,
